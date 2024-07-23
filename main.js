@@ -31,6 +31,10 @@ utility.countCharacters(stringRequested);
 
 // 2. Crear un key o una variable con el valor de esa letra.
     // HOW: destructuring? and for in loop??
+    // Quizas una vez se inicia el loop se puede imprimir una variable que tome
+    // el valor del value del loop
+    // despues darle el valor final de esa letra
+    // o quizas hacer este paso al final del loop?
 
 // 3. Comprobar cuantas veces esta esa letra en la palabra.
     // 3.1 La letra objetivo se compara con el resto de las letras de la palabra.
