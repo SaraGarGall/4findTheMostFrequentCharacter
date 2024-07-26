@@ -30,3 +30,11 @@ module.exports = { countCharacters };
 /*Encontrar la forma de almacenar la letra con el sum correspondiente*/
 /*Despues comparar y si el sum de la letra actual es menor que el que esta almacenado, entonces 
 se pasa a la siguiente. Si es igual o mayor, se almacena como la mas frecuente por ahora*/ 
+
+/*IDEAS PARA CONTINUAR Y PROBAR
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Symbol.iterator
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf
+*/
