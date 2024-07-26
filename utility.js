@@ -1,28 +1,32 @@
 function countCharacters(stringRequested) {
-  let sum = 0;
-  let positionInWord = 0;
-
+  
   for (i = 0; i < stringRequested.length; i++) {
     console.log('inside of the first for loop');
+    console.log('initialCharacter:', stringRequested[i]);
+    let sum = 0;
+    let maxAmount = 0;
 
-    let character = stringRequested[i];
-
-    console.log(stringRequested[i], positionInWord);
-
-    for (i = 0; i < stringRequested.length; i++) {
-      if (character === stringRequested[positionInWord]) {
+    for (j = 0; j < stringRequested.length; j++) {
+      console.log('inside of the second for loop');
+    
+      if (stringRequested[i] === stringRequested[j]) {
         sum += 1;
-        console.log(character, sum);
-        continue;
+        console.log('characterCompared:', stringRequested[j], sum);
       } else {
         sum += 0;
       }
-    
-      const obj = { character: sum };
-      console.log(obj);
     }
+    // como poner como el nombre de la variable el valor de stringRequested[i]?
+    // y despues como atribuirle a esa variab;e el valor de sum?
+    let character = sum;
+    console.log(stringRequested[i], sum, "characterSum:", character);
   }
-  positionInWord += 1;
+  
 }
 
 module.exports = { countCharacters };
+
+
+/*Encontrar la forma de almacenar la letra con el sum correspondiente*/
+/*Despues comparar y si el sum de la letra actual es menor que el que esta almacenado, entonces 
+se pasa a la siguiente. Si es igual o mayor, se almacena como la mas frecuente por ahora*/ 
