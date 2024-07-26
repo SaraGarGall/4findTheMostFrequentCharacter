@@ -3,22 +3,26 @@ function countCharacters(stringRequested) {
   let positionInWord = 0;
 
   for (i = 0; i < stringRequested.length; i++) {
-    console.log("inside loop");
-    
-    let character = stringRequested[i];
-    
-    console.log(stringRequested[i], character, positionInWord);
+    console.log('inside of the first for loop');
 
-    if (character === stringRequested[positionInWord]) {
-      sum += 1;
-      positionInWord += 1;
-      console.log(character, sum);
-      continue;
+    let character = stringRequested[i];
+
+    console.log(stringRequested[i], positionInWord);
+
+    for (i = 0; i < stringRequested.length; i++) {
+      if (character === stringRequested[positionInWord]) {
+        sum += 1;
+        console.log(character, sum);
+        continue;
+      } else {
+        sum += 0;
+      }
+    
+      const obj = { character: sum };
+      console.log(obj);
     }
-    continue;
   }
+  positionInWord += 1;
 }
 
 module.exports = { countCharacters };
-
-//for loop dentro de for loop
