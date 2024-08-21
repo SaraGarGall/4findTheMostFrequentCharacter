@@ -10,3 +10,10 @@ let stringRequested = prompt(
 console.log('You entered: ', stringRequested);
 
 utility.countCharacters(stringRequested);
+
+console.log(
+  'The most frequent character in',
+  stringRequested,
+  'is:',
+  moreFrequentCharacter
+);
